@@ -19,7 +19,6 @@ public class ThreeSum {
             // Two Pointer Algorithm
             int m = l + 1, r = nums.length - 1;
             while (m < r) {
-                System.out.println();
                 int sum = nums[l] + nums[m] + nums[r];
                 System.out.println("l: " + l + ", m: " + m + ", r: " + r + "; sum: " + sum);
                 if (sum == 0) {
