@@ -34,7 +34,7 @@ public class MinimumWindowSubstring {
                 windowCharCountMap.put(currentChar, windowCharCountMap.getOrDefault(currentChar, 0) + 1);
             }
 
-            while (have == need && l <= r) {
+            while (have == need) {
                 if (shortestWindow[0] == -1 || r - l < shortestWindow[1] - shortestWindow[0]) {
                     shortestWindow = new int[]{l, r};
                 }
@@ -53,9 +53,7 @@ public class MinimumWindowSubstring {
             }
         }
 
-        if (shortestWindow[0] == -1) return "";
-
-        return s.substring(shortestWindow[0], shortestWindow[1] + 1);
+        return shortestWindow[0] == -1 ? "" : s.substring(shortestWindow[0], shortestWindow[1] + 1);
     }
 
     public static void main(String[] args) {
