@@ -1,4 +1,4 @@
-//https://neetcode.io/problems/longest-substring-without-duplicates
+//https://neetcode.io/problems/permutation-string
 //Given a string s, find the length of the longest substring without duplicate characters.
 //
 //A substring is a contiguous sequence of characters within a string.
